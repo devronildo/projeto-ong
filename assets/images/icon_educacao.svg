@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="256" height="160" viewBox="0 0 256 160" role="img" aria-labelledby="t">
-  <title id="t">Ícone de Educação: livro aberto</title>
-  <rect width="256" height="160" fill="#f0f5ff"/>
-  <path d="M20 120 V40 a10 10 0 0 1 10-10 h80 a10 10 0 0 1 10 10 v80 a10 10 0 0 0-10-10 H30 a10 10 0 0 0-10 10z" fill="#2b6cb0"/>
-  <path d="M236 120 V40 a10 10 0 0 0-10-10 h-80 a10 10 0 0 0-10 10 v80 a10 10 0 0 1 10-10 h80 a10 10 0 0 1 10 10z" fill="#4c51bf"/>
-  <line x1="128" y1="40" x2="128" y2="120" stroke="#fff" stroke-width="4"/>
-</svg>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" role="img" aria-labelledby="t">
-  <title id="t">Logotipo simples da ONG Exemplo</title>
-  <rect x="0" y="0" width="120" height="120" fill="#2b6cb0"/>
-  <circle cx="60" cy="60" r="38" fill="#ffffff"/>
-  <text x="60" y="66" font-size="28" text-anchor="middle" fill="#2b6cb0" font-family="Arial, sans-serif">ONG</text>
-</svg>

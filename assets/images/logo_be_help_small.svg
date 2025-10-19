@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="Be Help ONG symbol">
+  <defs>
+    <linearGradient id="gradOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF8A00"/>
+      <stop offset="100%" stop-color="#FF3D3D"/>
+    </linearGradient>
+    <linearGradient id="gradGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60D36E"/>
+      <stop offset="100%" stop-color="#1FB954"/>
+    </linearGradient>
+    <linearGradient id="gradBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2DA8F6"/>
+      <stop offset="100%" stop-color="#0077D9"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="0.6" />
+    </filter>
+  </defs>
+
+  <!-- Left/top orange segment -->
+  <path d="M92 32
+           C56 32, 40 76, 64 110
+           C84 138, 108 154, 128 154
+           C128 120, 120 72, 92 32 Z"
+        fill="url(#gradOrange)" />
+
+  <!-- Right/green segment -->
+  <path d="M164 32
+           C200 32, 216 76, 192 110
+           C172 138, 148 154, 128 154
+           C128 120, 136 72, 164 32 Z"
+        fill="url(#gradGreen)" />
+
+  <!-- Bottom/blue segment -->
+  <path d="M64 122
+           C88 176, 168 176, 192 122
+           C168 140, 144 152, 128 152
+           C112 152, 88 140, 64 122 Z"
+        fill="url(#gradBlue)" />
+
+  <!-- White human figure (head + body/arm forming heart negative space) -->
+  <g transform="translate(0,2)">
+    <!-- head -->
+    <circle cx="128" cy="86" r="12" fill="#FFFFFF"/>
+    <!-- body/arm (stylized swoosh) -->
+    <path d="M98 140
+             C116 118, 136 110, 156 96
+             C160 92, 162 86, 158 82
+             C152 76, 142 86, 132 96
+             C120 108, 106 120, 98 140 Z"
+          fill="#FFFFFF"/>
+    <!-- lower swoosh -->
+    <path d="M102 150
+             C120 170, 136 176, 156 160
+             C150 166, 136 176, 128 176
+             C118 176, 108 170, 102 150 Z"
+          fill="#FFFFFF" opacity="0.95"/>
+  </g>
+
+  <!-- Subtle soft outline to improve contrast on light backgrounds -->
+  <path d="M128 154
+           C108 154, 84 138, 64 110
+           C40 76, 56 32, 92 32
+           C120 32, 128 72, 128 72
+           C128 72, 136 32, 164 32
+           C200 32, 216 76, 192 110
+           C172 138, 148 154, 128 154 Z"
+        fill="none" stroke-opacity="0.06" stroke="#000000" stroke-width="2" filter="url(#soft)"/>
+
+</svg>
