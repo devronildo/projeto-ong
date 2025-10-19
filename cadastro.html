@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cadastro — ONG Exemplo</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand"><img src="assets/img/logo.png" alt="Logo" /></a>
+      <nav class="main-nav" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html" aria-current="page">Cadastre-se</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <h1>Cadastro de Voluntário / Doador</h1>
+
+    <form id="cadastroForm" action="#" method="post" novalidate>
+      <fieldset>
+        <legend>Dados pessoais</legend>
+
+        <label for="nome">Nome completo</label>
+        <input id="nome" name="nome" type="text" required autocomplete="name" minlength="3" />
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required autocomplete="email" />
+
+        <label for="cpf">CPF</label>
+        <input id="cpf" name="cpf" type="text" inputmode="numeric" required aria-describedby="cpfHelp" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" />
+
+        <label for="telefone">Telefone</label>
+        <input id="telefone" name="telefone" type="tel" inputmode="tel" required placeholder="(00) 90000-0000" />
+
+        <label for="nascimento">Data de nascimento</label>
+        <input id="nascimento" name="nascimento" type="date" required max="2008-12-31" />
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Endereço</legend>
+
+        <label for="cep">CEP</label>
+        <input id="cep" name="cep" type="text" inputmode="numeric" required placeholder="00000-000" pattern="\d{5}-\d{3}" />
+
+        <label for="endereco">Endereço</label>
+        <input id="endereco" name="endereco" type="text" required />
+
+        <label for="cidade">Cidade</label>
+        <input id="cidade" name="cidade" type="text" required />
+
+        <label for="estado">Estado</label>
+        <select id="estado" name="estado" required>
+          <option value="">Selecione</option>
+          <option value="SP">SP</option>
+          <option value="RJ">RJ</option>
+          <!-- completar com UF -->
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferências</legend>
+
+        <label for="tipo">Quero me inscrever como</label>
+        <select id="tipo" name="tipo" required>
+          <option value="">Selecione</option>
+          <option value="voluntario">Voluntário</option>
+          <option value="doador">Doador</option>
+          <option value="visitante">Visitante</option>
+        </select>
+
+        <label>
+          <input type="checkbox" name="newsletter" /> Desejo receber newsletter
+        </label>
+      </fieldset>
+
+      <p>
+        <button type="submit" class="btn">Enviar cadastro</button>
+      </p>
+    </form>
+  </main>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

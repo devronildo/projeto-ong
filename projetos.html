@@ -1,0 +1,68 @@
+ 
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projetos — ONG Exemplo</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand"><img src="assets/img/logo.png" alt="Logo" /></a>
+      <nav class="main-nav" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastre-se</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <h1>Projetos Sociais</h1>
+    <p>Conheça nossos projetos, oportunidades de voluntariado e como doar.</p>
+
+    <section class="projects-grid" aria-label="Lista de projetos">
+      <!-- card de projeto (repetir conforme necessário) -->
+      <article class="project-card" aria-labelledby="p1-title">
+        <img src="assets/img/projetos/projeto1.jpg" alt="Oficina de empreendedorismo" loading="lazy" />
+        <h2 id="p1-title">Oficina de Empreendedorismo</h2>
+        <p>Descrição curta do projeto, metas e indicadores de impacto.</p>
+        <p><strong>Meta de arrecadação:</strong> R$ 15.000 — <span class="progress">60% alcançado</span></p>
+        <p>
+          <a href="#volunteer" class="btn">Quero ser voluntário</a>
+          <a href="#donate" class="btn-secondary">Doar</a>
+        </p>
+      </article>
+
+      <article class="project-card" aria-labelledby="p2-title">
+        <img src="assets/img/projetos/projeto2.jpg" alt="Aula de reforço escolar" loading="lazy" />
+        <h2 id="p2-title">Reforço Escolar</h2>
+        <p>Descrição curta do projeto, público atendido e como participar.</p>
+      </article>
+    </section>
+
+    <section id="volunteer" aria-labelledby="vol-title" class="container">
+      <h2 id="vol-title">Oportunidades de Voluntariado</h2>
+      <p>Inscreva-se para participar das próximas ações.</p>
+      <a href="cadastro.html" class="btn">Ir para cadastro</a>
+    </section>
+
+    <section id="donate" aria-labelledby="don-title" class="container">
+      <h2 id="don-title">Doações</h2>
+      <p>Plataforma segura para doações com prestação de contas periódica.</p>
+      <!-- aqui, integração real com gateway de pagamento virá em entregas posteriores -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year2"></span> ONG Exemplo</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
