@@ -9,14 +9,28 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <a href="index.html" class="brand"><img src="assets/img/logo.png" alt="Logo" /></a>
-      <nav class="main-nav" aria-label="Menu principal">
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="projetos.html" aria-current="page">Projetos</a></li>
-          <li><a href="cadastro.html">Cadastre-se</a></li>
+      <a href="index.html" class="brand"><img src="assets/images/logo.png" class="logo" alt="Logotipo ONG Be Help" /></a>
+       <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+         </button>
+        <nav class="main-nav" role="navigation" aria-label="Menu principal">
+        <ul class="menu">
+           
+
+            <li class="has-submenu">
+            <a href="projetos.html">Projetos ▾</a>
+            <ul class="submenu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+               
+            </ul>
+            </li>
+
+       
         </ul>
-      </nav>
+        </nav>
     </div>
   </header>
 
@@ -27,27 +41,47 @@
     <section class="projects-grid" aria-label="Lista de projetos">
       <!-- card de projeto (repetir conforme necessário) -->
       <article class="project-card" aria-labelledby="p1-title">
-        <img src="assets/img/projetos/projeto1.jpg" alt="Oficina de empreendedorismo" loading="lazy" />
+        <img src="assets/images/sede_img.png" alt="Oficina de empreendedorismo" loading="lazy" />
         <h2 id="p1-title">Oficina de Empreendedorismo</h2>
-        <p>Descrição curta do projeto, metas e indicadores de impacto.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <p><strong>Meta de arrecadação:</strong> R$ 30.000 — <span class="progress">80% alcançado</span></p>
-        <p>
+        <p >
           <a href="#volunteer" class="btn">Quero ser voluntário</a>
           <a href="#donate" class="btn-secondary">Doar</a>
         </p>
       </article>
 
       <article class="project-card" aria-labelledby="p2-title">
-        <img src="assets/img/projetos/projeto2.jpg" alt="Aula de reforço escolar" loading="lazy" />
+        <img src="assets/images/projeto_educacao_v15.png" alt="Aula de reforço escolar" loading="lazy" />
         <h2 id="p2-title">Reforço Escolar</h2>
-        <p>Descrição curta do projeto, público atendido e como participar.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </article>
+    </section>
+
+     <section class="projects-grid" aria-label="Lista de projetos">
+      <!-- card de projeto (repetir conforme necessário) -->
+      <article class="project-card" aria-labelledby="p1-title">
+        <img src="assets/images/ong-saude.png" alt="Saúde" loading="lazy" />
+        <h2 id="p1-title">Caridade Para o Hospital</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p><strong>Meta de arrecadação:</strong> R$ 100.000 — <span class="progress">50% alcançado</span></p>
+        <p >
+          <a href="cadastro.html" class="btn">Quero ser voluntário</a>
+          <a href="cadastro.html" class="btn-secondary">Doar</a>
+        </p>
+      </article>
+
+      <article class="project-card" aria-labelledby="p2-title">
+        <img src="assets/images/missao_banner_v14.png" alt="Inclusão social" loading="lazy" />
+        <h2 id="p2-title">Inclusão social</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </article>
     </section>
 
     <section id="volunteer" aria-labelledby="vol-title" class="container">
-      <h2 id="vol-title">Oportunidades de Voluntariado</h2>
+      <h2 >Oportunidades de Voluntariado</h2>
       <p>Inscreva-se para participar das próximas ações.</p>
-      <a href="cadastro.html" class="btn">Ir para cadastro</a>
+      <a href="cadastro.html" class="btn btn-cadastro">Ir para cadastro</a>
     </section>
 
     <section id="donate" aria-labelledby="don-title" class="container">
@@ -59,7 +93,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; <span id="year2"></span>ONG Be Help</p>
+       <p>&copy; <span id="year"></span> ONG Be Help — Todos os direitos reservados.</p>
     </div>
   </footer>
 

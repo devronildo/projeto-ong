@@ -11,15 +11,27 @@
   <header class="site-header" role="banner">
     <div class="container">
       <a href="index.html" class="brand" aria-label="Início - ONG Be Help">
-        <img src="assets/img/logo.png" alt="Logotipo ONG Be Help" />
+        <img src="assets/images/logo.png" class="logo" alt="Logotipo ONG Be Help" />
       </a>
-      <nav class="main-nav" role="navigation" aria-label="Menu principal">
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="cadastro.html">Cadastre-se</a></li>
+          <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+         </button>
+     <nav class="main-nav" role="navigation" aria-label="Menu principal">
+        <ul class="menu">
+           
+
+            <li class="has-submenu">
+            <a href="projetos.html">Inicio ▾</a>
+            <ul class="submenu">
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+  
+            </ul>
+            </li>
         </ul>
-      </nav>
+        </nav>
     </div>
   </header>
 
@@ -28,7 +40,7 @@
       <div class="container">
         <h1 id="hero-title">Nossa missão: potencializar comunidades</h1>
         <p>Atuamos em educação, saúde e inclusão, com transparência e impacto medido.</p>
-        <img src="assets/img/hero.jpg" alt="Voluntários em ação" loading="lazy" />
+        <img class="main-banner" src="assets/images/banner_img.png" alt="Voluntários em ação" loading="lazy" />
       </div>
     </section>
 
@@ -40,17 +52,23 @@
         <li>Voluntários: rede com mais de 700 pessoas</li>
         <li>Relatórios de transparência disponíveis para download</li>
       </ul>
+      <div class="container-img">
+         <img src="assets/images/voluntariado_real.png" alt="" loading="lazy" class="img-voluntario" />
+     </div>
       <a href="assets/docs/relatorio-transparencia.pdf" class="btn" aria-label="Download relatório de transparência">Ver relatório</a>
+    
     </section>
 
     <section class="contact container" aria-labelledby="contact-title">
-      <h2 id="contact-title">Contato</h2>
-      <address>
-        <p>Rua coelho neto, 100 — São Paulo/SP</p>
-        <p>Telefone: <a href="tel:+5511999999999">+55 (11) 7777-7777</a></p>
-        <p>Email: <a href="mailto:teste@ongbehelp.org">teste@behelp.org</a></p>
-      </address>
-    </section>
+        <h2 id="contact-title">Entre em Contato</h2>
+        <div class="contact-card">
+            <address>
+            <p><strong>Endereço:</strong> Rua Coelho Neto, 100 — São Paulo/SP</p>
+            <p><strong>Telefone:</strong> <a href="tel:+551177777777">+55 (11) 7777-7777</a></p>
+            <p><strong>Email:</strong> <a href="mailto:teste@behelp.org">teste@behelp.org</a></p>
+            </address>
+        </div>
+        </section>
   </main>
 
   <footer class="site-footer" role="contentinfo">

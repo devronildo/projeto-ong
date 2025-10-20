@@ -9,14 +9,28 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <a href="index.html" class="brand"><img src="assets/img/logo.png" alt="Logo" /></a>
-      <nav class="main-nav" aria-label="Menu principal">
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="cadastro.html" aria-current="page">Cadastre-se</a></li>
+      <a href="index.html" class="brand"><img src="assets/images/logo.png" class="logo" alt="Logotipo ONG Be Help" /></a>
+       <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+         </button>
+      <nav class="main-nav" role="navigation" aria-label="Menu principal">
+        <ul class="menu">
+            
+
+            <li class="has-submenu">
+            <a href="projetos.html">Cadastro ▾</a>
+            <ul class="submenu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                
+            </ul>
+            </li>
+
+           
         </ul>
-      </nav>
+        </nav>
     </div>
   </header>
 
