@@ -2,9 +2,16 @@
 
 Acesse o site publicado via GitHub Pages:
 
-https://seuusuario.github.io/behelp
+https://devronildo.github.io/projeto-ong/projetos.html
 
-Substitua seuusuario pelo seu usuário do GitHub.
+📌 Histórico de commits
+
+feat: Atividade1
+feat: Atividade2
+feat: Atividade3
+feat: Atividade4
+
+Branches:
 
 📌 Descrição do Projeto
 
@@ -24,8 +31,8 @@ Página	Descrição
 index.html	Página inicial com missão, valores e informações de contato.
 projetos.html	Listagem de projetos sociais e oportunidades de voluntariado.
 cadastro.html	Formulário completo com validação de dados para voluntários e doadores.
-💻 Tecnologias Utilizadas
 
+💻 Tecnologias Utilizadas
 HTML5 — Estrutura semântica e acessível.
 
 CSS3 — Layout responsivo, design moderno e modo escuro.
@@ -103,21 +110,12 @@ behelp/
 
 Histórico de commits organizado e semântico.
 
-Branches:
 
-main — versão estável
-
-develop — desenvolvimento
-
-feature/* — novas funcionalidades
-
-Pull Requests e Issues documentadas.
 
 🚀 Como Executar Localmente
 
 Clone o repositório:
-
-git clone https://github.com/seuusuario/behelp.git
+git clone https://github.com/devronildo/behelp.git
 
 
 Abra index.html no navegador.
@@ -127,6 +125,5 @@ Navegue pelas páginas e teste funcionalidades.
 Dica: use Live Server no VS Code para recarregamento automático.
 
 📝 Licença
-
 Projeto licenciado sob MIT License.
 Consulte o arquivo LICENSE para mais informações.
