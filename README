@@ -1,0 +1,132 @@
+🌐 Link de Acesso
+
+Acesse o site publicado via GitHub Pages:
+
+https://seuusuario.github.io/behelp
+
+Substitua seuusuario pelo seu usuário do GitHub.
+
+📌 Descrição do Projeto
+
+O site da ONG Be Help foi desenvolvido para:
+
+Apresentar a ONG, sua missão, visão e valores.
+
+Listar os projetos sociais ativos com cards dinâmicos.
+
+Permitir cadastro de voluntários e doadores.
+
+Garantir acessibilidade, responsividade e performance para todos os usuários.
+
+Páginas principais:
+
+Página	Descrição
+index.html	Página inicial com missão, valores e informações de contato.
+projetos.html	Listagem de projetos sociais e oportunidades de voluntariado.
+cadastro.html	Formulário completo com validação de dados para voluntários e doadores.
+💻 Tecnologias Utilizadas
+
+HTML5 — Estrutura semântica e acessível.
+
+CSS3 — Layout responsivo, design moderno e modo escuro.
+
+JavaScript (ES6+) — Funcionalidades interativas (menu, cards, validação de formulário).
+
+Git/GitHub — Versionamento e controle de histórico.
+
+WCAG 2.1 Nível AA — Acessibilidade e contraste adequado.
+
+⚙️ Funcionalidades
+Navegação
+
+Menu hambúrguer responsivo.
+
+Navegação por teclado e fechamento via tecla ESC.
+
+Atributos aria-label, aria-expanded e aria-current.
+
+Projetos
+
+Cards gerados dinamicamente via JavaScript.
+
+Imagens lazy loading para melhor performance.
+
+Estrutura semântica <article>.
+
+Cadastro
+
+Campos validados: nome, email, CPF, telefone, data de nascimento, CEP, endereço, cidade, estado, tipo de cadastro e gênero.
+
+Opção de newsletter.
+
+Mensagens de erro visíveis e claras.
+
+Reset automático do formulário após envio válido.
+
+Acessibilidade
+
+Estrutura semântica: header, main, footer, section, article.
+
+Contraste mínimo de 4.5:1.
+
+Compatível com leitores de tela.
+
+Navegação completa por teclado.
+
+Otimização
+
+CSS, JS e HTML limpos e modularizados.
+
+Imagens otimizadas e comprimidas.
+
+Performance aprimorada para dispositivos móveis e desktops.
+
+🗂 Estrutura de Pastas
+behelp/
+│
+├─ index.html
+├─ projetos.html
+├─ cadastro.html
+│
+├─ assets/
+│   ├─ css/
+│   │   └─ style.css
+│   ├─ js/
+│   │   └─ main.js
+│   └─ images/
+│       ├─ logo.png
+│       ├─ banner_img.png
+│       └─ projetos_*.png
+└─ README.md
+
+🔧 Controle de Versão
+
+Histórico de commits organizado e semântico.
+
+Branches:
+
+main — versão estável
+
+develop — desenvolvimento
+
+feature/* — novas funcionalidades
+
+Pull Requests e Issues documentadas.
+
+🚀 Como Executar Localmente
+
+Clone o repositório:
+
+git clone https://github.com/seuusuario/behelp.git
+
+
+Abra index.html no navegador.
+
+Navegue pelas páginas e teste funcionalidades.
+
+Dica: use Live Server no VS Code para recarregamento automático.
+
+📝 Licença
+
+Projeto licenciado sob MIT License.
+Consulte o arquivo LICENSE para mais informações.

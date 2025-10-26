@@ -1,7 +1,6 @@
 /* =========================================================
    DESIGN SYSTEM — ONG BE HELP
    ========================================================= */
-
 /*  Paleta de cores */
 :root {
   --color-primary: #2b6cb0;
@@ -36,7 +35,6 @@
   --radius: 8px;
   --shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-
 /* =========================================================
    RESETO E BASE
    ========================================================= */
@@ -45,7 +43,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: var(--font-base);
   font-size: var(--font-size-md);
@@ -53,13 +50,11 @@ body {
   background-color: var(--color-neutral-100);
   line-height: 1.6;
 }
-
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
   padding: 0 var(--space-2);
 }
-
 /* =========================================================
    CABEÇALHO E MENU
    ========================================================= */
@@ -68,19 +63,16 @@ body {
   color: #fff;
   padding: var(--space-2) 0;
 }
-
 .site-header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .main-nav ul {
   display: flex;
   gap: var(--space-3);
   list-style: none;
 }
-
 .main-nav a {
   color: #fff;
   text-decoration: none;
@@ -143,7 +135,6 @@ section {
   color: red;
   margin-left: 4px;
 }
-
 .contact {
     margin-top: 10px;
 }
@@ -386,7 +377,6 @@ button.btn {
 /* =========================================================
    MENU HAMBÚRGUER RESPONSIVO
    ========================================================= */
-
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -426,7 +416,6 @@ button.btn {
   display: flex;
 }
 
-
 /* Menu mobile fechado */
 @media (max-width: 768px) {
   .menu-toggle {
@@ -459,219 +448,20 @@ button.btn {
     font-size: var(--font-size-lg);
   }
 }
-@media (max-width: 1200px) { }
-@media (max-width: 360px)  {  }
 
- 
- /* =========================================================
-    Dropdown Menu
+/* =========================================================
+   ACESSIBILIDADE WCAG 2.1
    ========================================================= */
-  /* ====== SUBMENU (INATIVO POR PADRÃO) ====== */
-.submenu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  min-width: 180px;
-  background: #fff;
-  border: 1px solid var(--color-border, #ddd);
-  border-radius: 6px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  list-style: none;
-  padding: 8px 0;
-  margin: 0;
-  display: none; /* 🔒 Inativo inicialmente */
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(10px);
-  transition: all 0.25s ease;
-  z-index: 10;
+a:focus, button:focus, input:focus, select:focus {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
 }
-
- 
-.has-submenu:hover > .submenu,
-.has-submenu.active > .submenu {
-
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
+.main-nav a:focus {
+  background-color: var(--color-primary-light);
+  color: #fff;
 }
- 
-.menu li a:hover {
-  background: var(--color-primary, #007BFF);
-  color: #fff !important;
-}
-
-/* ====== RESPONSIVO ====== */
-@media (max-width: 768px) {
-  .main-nav ul.menu {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .submenu {
-    position: relative;
-    box-shadow: none;
-    border: none;
-    background: transparent;
-    transform: none;
-  }
-
-  .submenu li a {
-    padding-left: 24px;
-  }
-}
-
-   /* ====== MENU PRINCIPAL ====== */
-.main-nav {
-  position: relative;
-}
-
-.main-nav ul.menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: var(--spacing-md, 16px);
-  align-items: center;
-}
-
-.main-nav ul.menu li {
-  position: relative;
-}
-
-.main-nav ul.menu a {
-  text-decoration: none;
-  color: var(--color-dark, #333);
-  font-weight: 500;
-  padding: 8px 12px;
-  display: block;
-  transition: color 0.3s ease;
-}
-
-.main-nav ul.menu a:hover {
-  color: var(--color-primary, #007BFF);
-}
-
- 
-/* Esconde o menu por padrão em telas pequenas */
-.main-nav {
-  display: none;
-}
-
-/* Mostra quando a classe "open" estiver presente */
-.main-nav.open {
-  display: block;
-}
-
-/* Botão hambúrguer animado */
-.menu-toggle.active .bar:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-.menu-toggle.active .bar:nth-child(2) {
-  opacity: 0;
-}
-.menu-toggle.active .bar:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
-
-/* Ajuste de responsividade (opcional) */
-@media (min-width: 768px) {
-  .main-nav {
-    display: block !important;
-  }
-  .menu-toggle {
-    display: none;
-  }
-}
-
-/* Container do cabeçalho */
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Menu hambúrguer */
-.menu-toggle {
-  display: block;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.menu-toggle .bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px 0;
-  background-color: #333;
-  transition: all 0.3s ease;
-}
-
-/* Nav padrão mobile */
-.main-nav {
-  display: none;
-}
-
-/* Menu aberto (quando clicar no hambúrguer) */
-.main-nav.open {
-  display: block;
-}
-
-/* Dropdown submenu */
-.has-submenu {
-  position: relative;
-}
-.has-submenu .submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: #fff;
-  padding: 0.5em 0;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  list-style: none;
-}
-.has-submenu:hover .submenu {
-
-}
-.submenu li a {
- 
-  padding: 0.5em 1em;
-  color: #333;
-  text-decoration: none;
-}
-.submenu li a:hover {
-  background-color: #f0f0f0;
-}
-
-/* Desktop */
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
-
-  .main-nav {
-    display: block !important;
-  }
-
-  .menu {
-    display: flex;
-    gap: 1.5em;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .menu li {
-    position: relative;
-  }
-
-  .menu a {
-    text-decoration: none;
-    color: #333;
-    padding: 0.5em 0;
-    display: block;
-  }
+.contact-card:focus-within,
+.project-card:focus-within {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
