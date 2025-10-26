@@ -7,32 +7,33 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a href="index.html" class="brand"><img src="assets/images/logo.png" class="logo" alt="Logotipo ONG Be Help" /></a>
-       <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-         </button>
-      <nav class="main-nav" role="navigation" aria-label="Menu principal">
-        <ul class="menu">
-            
+ <header class="site-header" role="banner">
+  <div class="container header-container">
+    <a href="index.html" class="brand" aria-label="Início - ONG Be Help">
+      <img src="assets/images/logo.png" class="logo" alt="Logotipo ONG Be Help" />
+    </a>
 
-            <li class="has-submenu">
-            <a href="projetos.html">Cadastro ▾</a>
-            <ul class="submenu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                
-            </ul>
-            </li>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
 
+    <nav class="main-nav" role="navigation" aria-label="Menu principal">
+      <ul class="menu">
+        <li class="has-submenu">
+          
+          <ul class="submenu">
            
-        </ul>
-        </nav>
-    </div>
-  </header>
+          </ul>
+        </li>
+           <li><a href="index.html">Inicio</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
   <main class="container" role="main">
     <h1>Cadastro de Voluntário / Doador</h1>
@@ -48,21 +49,22 @@
         <input id="email" name="email" type="email" required autocomplete="email" />
 
         <label for="cpf">CPF</label>
-        <input id="cpf" name="cpf" type="text" inputmode="numeric" required aria-describedby="cpfHelp" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" />
+        <input id="cpf" name="cpf" type="text" inputmode="numeric" required aria-describedby="cpfHelp"
+          pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" />
 
         <label for="telefone">Telefone</label>
         <input id="telefone" name="telefone" type="tel" inputmode="tel" required placeholder="(00) 90000-0000" />
 
         <label for="nascimento">Data de nascimento</label>
         <input id="nascimento" name="nascimento" type="date" required max="2008-12-31" />
-
       </fieldset>
 
       <fieldset>
         <legend>Endereço</legend>
 
         <label for="cep">CEP</label>
-        <input id="cep" name="cep" type="text" inputmode="numeric" required placeholder="00000-000" pattern="\d{5}-\d{3}" />
+        <input id="cep" name="cep" type="text" inputmode="numeric" required placeholder="00000-000"
+          pattern="\d{5}-\d{3}" />
 
         <label for="endereco">Endereço</label>
         <input id="endereco" name="endereco" type="text" required />
@@ -75,7 +77,9 @@
           <option value="">Selecione</option>
           <option value="SP">SP</option>
           <option value="RJ">RJ</option>
-          <!-- completar com UF -->
+          <option value="MG">MG</option>
+          <option value="BA">BA</option>
+          <option value="RS">RS</option>
         </select>
       </fieldset>
 
@@ -95,12 +99,16 @@
         </label>
       </fieldset>
 
-      <p>
-        <button type="submit" class="btn">Enviar cadastro</button>
-      </p>
+      <p><button type="submit" class="btn">Enviar cadastro</button></p>
     </form>
   </main>
 
-  <script src="assets/js/main.js" defer></script>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> ONG Be Help — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
