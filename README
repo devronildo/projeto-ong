@@ -1,7 +1,6 @@
 🌐 Link de Acesso
 
 Acesse o site publicado via GitHub Pages:
-
 https://devronildo.github.io/projeto-ong/projetos.html
 
 📌 Histórico de commits
@@ -92,15 +91,20 @@ Performance aprimorada para dispositivos móveis e desktops.
 🗂 Estrutura de Pastas
 behelp/
 │
-├─ index.html
+├─ index.html                 <-- versão original
+├─ index.min.html             <-- versão minificada para produção
 ├─ projetos.html
+├─ projetos.min.html
 ├─ cadastro.html
+├─ cadastro.min.html
 │
 ├─ assets/
 │   ├─ css/
 │   │   └─ style.css
+|       └─ style.min.css
 │   ├─ js/
 │   │   └─ main.js
+|   |   └─ main.min.js
 │   └─ images/
 │       ├─ logo.png
 │       ├─ banner_img.png
