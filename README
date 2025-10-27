@@ -1,7 +1,7 @@
 🌐 Link de Acesso
 
 Acesse o site publicado via GitHub Pages:
-https://devronildo.github.io/projeto-ong/projetos.html
+https://devronildo.github.io/projeto-ong/index.html
 
 📌 Histórico de commits
 
@@ -42,7 +42,7 @@ cadastro.html	Formulário completo com validação de dados para voluntários e 
 💻 Tecnologias Utilizadas
 HTML5 — Estrutura semântica e acessível.
 
-CSS3 — Layout responsivo, design moderno e modo escuro.
+CSS3 — Layout responsivo, design moderno.
 
 JavaScript (ES6+) — Funcionalidades interativas (menu, cards, validação de formulário).
 
@@ -66,6 +66,8 @@ Cards gerados dinamicamente via JavaScript.
 Imagens lazy loading para melhor performance.
 
 Estrutura semântica <article>.
+
+Fazer doação
 
 Cadastro
 
