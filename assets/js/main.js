@@ -1,3 +1,63 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const openBtn = document.querySelector('#donate .btn');
+  const overlay = document.querySelector('.overlay');
+  const dialog = document.querySelector('.dialog');
+  const closeBtn = document.querySelector('.close-btn');
+  const donationButtons = document.querySelectorAll('.donation-row button');
+  const confirmBtn = document.querySelector('.primary');
+  const cancelBtn = document.querySelector('.secondary');
+
+  if (!openBtn || !overlay) return; 
+
+  let lastFocus;
+
+  // abrir modal
+  openBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    lastFocus = document.activeElement;
+    overlay.classList.add('open');
+    overlay.removeAttribute('hidden');
+    dialog.focus();
+  });
+
+  // fechar modal
+  function closeModal() {
+    overlay.classList.remove('open');
+    overlay.setAttribute('hidden', 'true');
+    lastFocus?.focus();
+  }
+
+  closeBtn.addEventListener('click', closeModal);
+  cancelBtn.addEventListener('click', closeModal);
+
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) closeModal();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeModal();
+  });
+
+  // selecionar valor
+  donationButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      donationButtons.forEach((b) => b.setAttribute('aria-pressed', 'false'));
+      btn.setAttribute('aria-pressed', 'true');
+    });
+  });
+
+  // confirmar doação
+  confirmBtn.addEventListener('click', () => {
+    const selected = document.querySelector('.donation-row button[aria-pressed="true"]');
+    if (!selected) {
+      alert('Selecione um valor antes de confirmar.');
+      return;
+    }
+    alert(`Doação confirmada: ${selected.textContent}`);
+    closeModal();
+  });
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   // ==========================
   // Menu Hamburguer
@@ -187,3 +247,5 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+
+

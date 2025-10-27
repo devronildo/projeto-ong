@@ -1,1 +1,94 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>Projetos — ONG Be Help</title><meta name="description" content="Projetos sociais da ONG Be Help — conheça, participe e apoie nossas ações." /><link rel="stylesheet" href="assets/css/style.min.css"></head><body><header class="site-header" role="banner"><div class="container header-container"><a href="index.html" class="brand" aria-label="Início - ONG Be Help"><img src="assets/images/logo.png" class="logo" alt="Logotipo ONG Be Help" /></a><button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" type="button"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button><nav class="main-nav" role="navigation" aria-label="Menu principal"><ul class="menu"><li><a href="index.html">Início</a></li><li><a href="projetos.html" aria-current="page">Projetos</a></li><li><a href="cadastro.html">Cadastro</a></li></ul></nav></div></header><main class="container" role="main"><header class="page-header"><h1>Projetos Sociais</h1><p>Conheça nossos principais projetos e saiba como participar ou apoiar nossas causas.</p></header><section class="projects-grid" aria-label="Lista de projetos"><template id="project-card-template"><article class="project-card"><img src="" alt="" class="project-img" loading="lazy" /><div class="project-info"><h3 class="project-title"></h3><p class="project-desc"></p><a href="#" class="btn project-btn" aria-label="Saiba mais sobre o projeto">Saiba mais</a></div></article></template></section><section id="volunteer" aria-labelledby="vol-title" class="volunteer-section"><h2 id="vol-title">Oportunidades de Voluntariado</h2><p>Participe das próximas ações e contribua com o seu tempo e talento!</p><a href="cadastro.html" class="btn btn-cadastro">Ir para cadastro</a></section><section id="donate" aria-labelledby="don-title" class="donate-section"><h2 id="don-title">Doações</h2><p>Doe com segurança e acompanhe a prestação de contas detalhada de cada projeto.</p><a href="#" class="btn">Fazer doação</a></section></main><footer class="site-footer" role="contentinfo"><div class="container"><p>&copy;<span id="year"></span>ONG Be Help — Todos os direitos reservados.</p></div></footer><script src="assets/js/main.min.js"></script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projetos — ONG Be Help</title>
+  <meta name="description" content="Projetos sociais da ONG Be Help — conheça, participe e apoie nossas ações." />
+  <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+<header class="site-header" role="banner">
+  <div class="container header-container">
+    <a href="index.html" class="brand" aria-label="Início - ONG Be Help">
+      <img src="assets/images/logo.png" class="logo" alt="Logotipo ONG Be Help" />
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" type="button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <nav class="main-nav" role="navigation" aria-label="Menu principal">
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="container" role="main">
+  <header class="page-header">
+    <h1>Projetos Sociais</h1>
+    <p>Conheça nossos principais projetos e saiba como participar ou apoiar nossas causas.</p>
+  </header>
+  <section class="projects-grid" aria-label="Lista de projetos">
+    <template id="project-card-template">
+      <article class="project-card">
+        <img src="" alt="" class="project-img" loading="lazy" />
+        <div class="project-info">
+          <h3 class="project-title"></h3>
+          <p class="project-desc"></p>
+          <a href="#" class="btn project-btn" aria-label="Saiba mais sobre o projeto">Saiba mais</a>
+        </div>
+      </article>
+    </template>
+  </section>
+  <section id="volunteer" aria-labelledby="vol-title" class="volunteer-section">
+    <h2 id="vol-title">Oportunidades de Voluntariado</h2>
+    <p>Participe das próximas ações e contribua com o seu tempo e talento!</p>
+    <a href="cadastro.html" class="btn btn-cadastro">Ir para cadastro</a>
+  </section>
+  <section id="donate" aria-labelledby="don-title" class="donate-section">
+    <h2 id="don-title">Doações</h2>
+    <p>Doe com segurança e acompanhe a prestação de contas detalhada de cada projeto.</p>
+    <button class="btn">Fazer doação</button>
+  </section>
+</main>
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <p>&copy; <span id="year"></span> ONG Be Help — Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+ 
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+<body>
+ 
+  <!-- Modal deve vir aqui -->
+  <div class="overlay" id="modal" role="dialog" aria-modal="true">
+    <div class="dialog">
+      <header>
+        <h2>Fazer doação</h2>
+        <button class="close-btn" aria-label="Fechar">&times;</button>
+      </header>
+      <div class="content">
+        <p>Escolha o valor da sua doação:</p>
+        <div class="donation-row">
+          <button>R$ 10</button>
+          <button>R$ 20</button>
+          <button>R$ 50</button>
+        </div>
+        <div class="actions">
+          <button class="primary">Confirmar</button>
+          <button class="secondary">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
